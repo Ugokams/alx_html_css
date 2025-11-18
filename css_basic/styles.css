@@ -1,0 +1,51 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+
+article{
+    flex: 2;
+    overflow-y: scroll;
+}
+
+aside{
+    flex: 1;
+    overflow-y: scroll;
+}
+
+.logo{
+    width: 20px;
+    padding-right: 500px;
+    padding-left: 50px;
+}
+
+header{
+    background-color: blueviolet;
+    border: 1px solid black;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 10px 20px;
+    margin: 0;
+}
+.navborder{
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(205, 160, 248);
+}
+
+.navborder:hover{
+    background-color: rgb(68, 2, 129);
+    color: white;
+}
