@@ -1,0 +1,150 @@
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("fonts/SourceSansPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Spin Cycle OT";
+    src: url("fonts/Spin-Cycle-OT.otf") format("opentype");
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url(Assets/background.png);
+    font-family: "source sans pro";
+}
+
+.flex-box{
+    display: flex;    
+    align-items: center;
+    justify-content: space-between;
+}
+
+.noflex-box{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.nav-links{
+    list-style-type: none;
+}
+
+.nav-links li{
+    justify-content: space-between;
+    padding: 10px 50px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.navbar{
+    padding: 10px 40px;
+    margin: 0;
+}
+
+.logo{
+    padding-left: 50px;
+}
+
+.logo img {
+    width: 50px; 
+    height: auto;
+    border-radius: 100%;
+}
+
+header{
+    color: white;
+}
+
+.pros{
+    flex-direction: column;
+    color: white;
+    line-height: 1.5px;
+}
+
+.pros h1{
+    font-size: 120px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+ul span{
+    padding-right: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.btn {
+    font-weight: normal;
+    font-size: 14px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    padding: 15px 25px;
+    background-color: #C271FF;
+    color: white;
+    cursor: pointer;
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.18),
+        0 2px 20px rgba(0, 0, 0, 0.10);
+}
+
+section {
+    margin-bottom: 70px;
+}
+
+.learn-pros {
+    flex-direction: column;
+    gap: 40px;
+}
+
+.learn-pros h2 {
+    font-size: 32px;
+    font-weight: 300;
+    color: white;
+    text-align: center; 
+}
+
+.colored-text {
+    color: #C271FF;
+    font-weight: bold;
+}
+
+.learn-pros-images {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 120px; 
+    font-size: 18px;
+    color: white;
+    font-style: normal;
+}
+
+
+.learn-pros-images > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 180px;
+}
+
+.learn-pros-images img {
+    border-radius: 50%;
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.learn-pros-images h3 {
+    margin: 5px 0;
+}
+
+.learn-pros-images p {
+    font-style: italic;
+    margin: 0;
+}

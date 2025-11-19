@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navbar flex-box">
             <div class="logo">
-                <img src="Assets/logo.png" alt="logo">
+                <img src="Assets/logos.jpg" alt="logo">
             </div>
             <div>
-                <ul>
+                <ul class="nav-links flex-box">
                     <li>COURSES</li>
                     <li>PRICING</li>
                     <li>LOGIN</li>
@@ -23,10 +25,10 @@
     </header>
 
     <main>
-        <section>
+        <section class="pros flex-box">
             <h1>Get Schooled</h1>
             <div>
-                <ul>
+                <ul class="flex-box">
                     <span>SMILES</span>
                     <span>GRIN</span>
                     <span>LAUGH</span>
@@ -35,93 +37,105 @@
             <button class="btn">REGISTER FOR FREE</button>
         </section>
 
-        <section>
-            <h2>Learn from the pros</h2>
-            <div>
+        <section class="flex-box learn-pros">
+            <h2><span class="colored-text">Learn</span> from the pros</h2>
+            <div class="flex-box learn-pros-images">
                 <div>
                     <img src="Assets/avatar-3.jpg" alt="image3">
                     <h3>Philip Massey</h3>
-                    <p>« Smile of the year » 2018 - 2019</p>
+                    <p class="center-text">« Smile of the year »<br>2018 - 2019</p>
                 </div>
                 <div>
                     <img src="Assets/avatar-2.jpg" alt="image2">
                     <h3>Nannie Lawrence</h3>
-                    <p>« Best little smile » 2017</p>
+                    <p class="center-text">« Best little smile »<br>2017</p>
                 </div>
                 <div>
                     <img src="Assets/avatar-1.jpg" alt="image1">
                     <h3>Bruce Walters</h4>
-                    <p>Best « friend smile » live performance 2019</p>
+                    <p class="center-text">Best « friend smile »<br>live performance 2019</p>
                 </div>
                 <div>
                     <img src="Assets/avatar.jpg" alt="avatar">
                     <h3>Henry Hughes</h3>
-                    <p>« 24h smiles » winner 2016 - 2019</p>
+                    <p class="center-text">« 24h smiles »<br>winner 2016 - 2019</p>
                 </div>
             </div>
 
         </section>
 
-        <section>
+        <section class="quotes-container">
             <img src="Assets/avatar (1).png" alt="avatar1">
-            <div>
-                <blockquote>« Those tutorials are concise and go straight to the point. I can’t think of a better place to learn smiling. And it’s so fun!</blockquote>
+            <div class="quotes">
+                <blockquote>« Those tutorials are concise and go straight to the point. I can’t think of a better<br>place to learn smiling. And it’s so fun!</blockquote>
                 <h3>Person name</h3>
                 <p>weather presenter</p>
             </div>
         </section>
 
-        <section>
-            <h2>Most popular tutorials</h2>
-            <div>
-                <div>
-                    <img src="Assets/preview.jpg" alt="preview-image">
+        <section class= "popular-tutorials noflex-box">
+            <h2>Most <span class="colored-text">popular</span> tutorials</h2>
+            <div class="flex-box">
+                <div class="videos">
+                    <div class="video-thumbnail">
+                        <img src="Assets/preview.jpg" alt="preview-image">
+                        <div class="play-icon"><img src="Assets/play.jpg" alt="play icon"></div>
+                    </div>
                     <h3>Diagonal Smile</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, tempore?</p>
-                    <div class="author">
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                    <div class="author flex-box">
                         <img src="Assets/avatar-3.jpg" alt="avatar-3">
                         <h4>Philip Massey</h4>
                     </div>
-                    <div class="rating">
+                    <div class="rating flex-box">
                         <img src="Assets/rating.png" alt="rating">
                         <p>8 min</p>
                     </div>
                 </div>
-                <div>
-                    <img src="Assets/preview-1.jpg" alt="preview-1">
+                <div class="videos">
+                    <div class="video-thumbnail">
+                        <img src="Assets/preview-1.jpg" alt="preview-1">
+                        <div class="play-icon"><img src="Assets/play.jpg" alt="play icon"></div>
+                    </div>
                     <h3>Sad Smile</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, tempore?</p>
-                    <div class="author">
+                    <p>Lorem ipsum dolor sit amet consectetur</p>
+                    <div class="author flex-box">
                         <img src="Assets/avatar-3.jpg" alt="avatar-3">
                         <h4>Philip Massey</h4>
                     </div>
-                    <div class="rating">
+                    <div class="rating flex-box">
                         <img src="Assets/rating.png" alt="rating">
                         <p>8 min</p>
                     </div>
                 </div>
-                <div>
-                    <img src="Assets/preview-2.jpg" alt="preview-2">
+                <div class="videos">
+                    <div class="video-thumbnail">
+                        <img src="Assets/preview-2.jpg" alt="preview-2">
+                        <div class="play-icon"><img src="Assets/play.jpg" alt="play icon"></div>
+                    </div>
                     <h3>Natural Smile</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, tempore?</p>
-                    <div class="author">
+                    <p>Lorem ipsum dolor sit amet consectetur, </p>
+                    <div class="author flex-box">
                         <img src="Assets/avatar-3.jpg" alt="avatar-3">
                         <h4>Philip Massey</h4>
                     </div>
-                    <div class="rating">
+                    <div class="rating flex-box">
                         <img src="Assets/rating.png" alt="rating">
                         <p>8 min</p>
                     </div>
                 </div>
-                <div>
-                    <img src="Assets/preview-3.jpg" alt="preview-3">
+                <div class="videos">
+                    <div class="video-thumbnail">
+                        <img src="Assets/preview-3.jpg" alt="preview-3">
+                        <div class="play-icon"><img src="Assets/play.jpg" alt="play icon"></div>
+                    </div>
                     <h3>Happy Smile</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, tempore?</p>
-                    <div class="author">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing </p>
+                    <div class="author flex-box">
                         <img src="Assets/avatar-3.jpg" alt="avatar-3">
                         <h4>Philip Massey</h4>
                     </div>
-                    <div class="rating">
+                    <div class="rating flex-box">
                         <img src="Assets/rating.png" alt="rating">
                         <p>8 min</p>
                     </div>
@@ -129,9 +143,9 @@
             </div>
         </section>
 
-        <section>
+        <section class="Membership">
             <h2>Free Membership</h2>
-            <div>
+            <div class="flex-box">
                 <div>
                     <img src="Assets/smile.jpg" alt="smile">
                     <h3>Lorem Ipsum</h3>
