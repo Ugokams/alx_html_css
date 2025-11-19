@@ -83,7 +83,7 @@ ul span{
     font-weight: normal;
     font-size: 14px;
     border: 1px solid grey;
-    border-radius: 15px;
+    border-radius: 25px;
     padding: 15px 25px;
     background-color: #C271FF;
     color: white;
@@ -93,13 +93,10 @@ ul span{
         0 2px 20px rgba(0, 0, 0, 0.10);
 }
 
-section {
-    margin-bottom: 70px;
-}
-
 .learn-pros {
     flex-direction: column;
     gap: 40px;
+    padding-bottom: 80px;
 }
 
 .learn-pros h2 {
@@ -179,13 +176,15 @@ section {
 
 .popular-tutorials{
     background-color: white;
+    padding-bottom: 80px;
 }
 
-.popular-tutorials h2{
+.popular-tutorials h2 {
     font-size: 32px;
     font-weight: 300;
     color: black;
-    margin: 40px 0;
+    margin: 0;
+    padding: 40px 0;
 }
 
 .video-thumbnail {
@@ -262,6 +261,46 @@ section {
 .rating{
     justify-content: space-around;
     text-align: left;
-    margin-bottom: 80px;
+    margin-bottom: 0;
+}
+
+.membership {
+    background-color: #071629;
+    width: 100%;
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.membership h2{
+    font-size: 32px;
+    font-weight: 300;
+    color: white;
+    text-align: center; 
+    margin-bottom: 50px;
+}
+
+.smileNmessage{
+    margin-left: 65px;
+    margin-right: 65px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.smileNmessage p{
+    margin-left: 0;
+    padding-left: 0;
+    padding-bottom: 50px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.smileNmessage h3{
+    font-size: 16px;
+    font-weight: bold;
 }
 
