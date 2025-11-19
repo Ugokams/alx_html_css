@@ -51,9 +51,8 @@ body{
 }
 
 .logo img {
-    width: 50px; 
-    height: auto;
-    border-radius: 100%;
+    width: 167px; 
+    height: 30px;
 }
 
 header{
@@ -331,5 +330,28 @@ ul span{
     font-weight: bold;
 }
 
+.foot{
+    background-color: #071629;
+    color: gray;
+    text-align: center;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.foot p{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.logo-socials{
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.logo-socials i{
+    color: white;
+    gap: 20px;
+}
 
 
