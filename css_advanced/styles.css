@@ -304,3 +304,32 @@ ul span{
     font-weight: bold;
 }
 
+.faq{
+    background-color: white;
+    padding-bottom: 50px;
+}
+
+.faq h2{
+    font-size: 60px;
+    font-weight: 300;
+}
+.left-align{
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.left-align p{
+    margin-left: 0;
+    padding-left: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: gray;
+}
+.left-align h3{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
