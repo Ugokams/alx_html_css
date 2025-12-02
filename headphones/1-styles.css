@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-white: rgb(255, 255, 255);
+    --red-color: #FF6565;
+    --btn-hover-color: #FF6565;
+    --border-radius: 8px;
+    --font-weight-bold: bold;
+    --font-weight-regular: 400;
+    --font-size-12: 12px;
+    --font-size-32: 32px;
+    --font-size-16: 16px;
+    --font-size-14: 14px;
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("fonts/SourceSansPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Spin Cycle OT";
+    src: url("fonts/Spin-Cycle-OT.otf") format("opentype");
+}
+
+.flex-box{
+    display: flex;
+}
+
+.flexbox-column{
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    background-image: url(Assets/headphones_hero_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: "source sans pro";
+    color: var(--text-color-white);
+}
+
+h1{
+    font-size: var(--font-size-32);
+    font-weight: var(--font-weight-bold);
+}
+
+h4{
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-bold);
+}
+p{
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-regular);
+}
+
+.navbar{
+    padding: 20px 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo img{
+    width: 161px;
+    height: 32px;
+}
+
+.hamburger{
+    width: 30px;
+    height: 22px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 10;
+    position: static;
+}
+.hamburger span{
+    height: 3px;
+    width: 100%;
+    background: white;
+    border-radius: 3px;
+    transition: 0.4s ease;
+}
+
+.hamburger .short-span{
+    width: 50%;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+
+.logo img{
+    width: 150px;
+}
+
+.nav-links{
+    list-style-type: none;
+}
+
+.nav-links li{
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: var(--color-white);
+    white-space: nowrap;
+    font-size: var(--font-size-12);
+    font-weight: var(--font-weight-bold);
+}
+
+.nav-links a:hover{
+    color: var(--btn-color);
+    
+}
+
+.first-section{
+    margin-top: 200px;
+    text-align: center;
+    align-items: center; 
+    padding-bottom: 60px;  
+}
+
+.first-section p, h1, h4{
+    color: var(--color-white);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.second-section{
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;  
+    padding-top: 140px; 
+    padding-bottom: 100px; 
+}
+
+.second-section p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.media {
+    display: flex;
+    flex-wrap: wrap;                     /* allow wrapping on small screens */
+    justify-content: center;      /* spread items evenly */
+    align-items: stretch;                /* make all divs the same height */
+    gap: 100px;                           /* gap between items */
+    padding: 60px 20px;
+}
+
+.media > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 180px;
+}
+.media img{
+    align-items: center;                /* center content horizontally */
+    text-align: center;                 /* center text */
+    justify-content: flex-start; 
+    height: 60px;
+}
+
+.media p{
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-14);
+    text-align: center;
+}
+
+
+.btn{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: var(--red-color);
+    border-radius: 20px;
+    width: auto;
+    padding: 15px 30px;
+    color: var(--color-white);
+    cursor: pointer;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-14);
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
+
+@media (max-width: 480px){
+    .hamburger{
+        display: flex;
+    }
+
+    .navbar{
+        display: flex;
+    }
+
+    .nav-links{
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #menu-toggle:checked + .hamburger + .logo + .nav-links {
+        display: flex;
+    }
+
+    /* HAMBURGER ANIMATION (into X) */
+    #menu-toggle:checked + .hamburger span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    #menu-toggle:checked + .hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menu-toggle:checked + .hamburger span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .logo{
+        position: absolute;
+        left: 30%;
+    }
+
+    .first-section .second-section{
+        padding: 0 20px;
+        padding-bottom: 20px;
+
+    }
+    .first-section h1, h4, p{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .second-section p{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .btn {
+        margin: 40px 0;
+        background-color: var(--red-color);
+        padding: 15px 30px;
+        border-radius: 20px;
+        color: var(--text-color-white);
+        cursor: pointer;
+    }
+
+    .btn:hover{
+        opacity: 0.9;
+}
+}
