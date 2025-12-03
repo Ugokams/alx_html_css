@@ -1,0 +1,437 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-white: rgb(255, 255, 255);
+    --color-off-white: #f5f5f5;
+    --red-color: #FF6565;
+    --black-color: #000000;
+    --btn-hover-color: #FF6565;
+    --border-radius: 8px;
+    --font-weight-bold: bold;
+    --font-weight-regular: 400;
+    --font-size-12: 12px;
+    --font-size-32: 32px;
+    --font-size-20: 20px;
+    --font-size-46: 46px;
+    --font-size-16: 16px;
+    --font-size-14: 14px;
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("fonts/SourceSansPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Spin Cycle OT";
+    src: url("fonts/Spin-Cycle-OT.otf") format("opentype");
+}
+
+.flex-box{
+    display: flex;
+}
+
+.flexbox-column{
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    font-family: "source sans pro";
+    color: var(--text-color-white);
+}
+
+.hero-bg{
+    background-image: url(Assets/headphones_hero_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    font-size: var(--font-size-32);
+    font-weight: var(--font-weight-bold);
+}
+
+h4{
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-bold);
+}
+p{
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-regular);
+}
+
+.navbar{
+    padding: 20px 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo img{
+    width: 161px;
+    height: 32px;
+}
+
+.hamburger{
+    width: 30px;
+    height: 22px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 10;
+    position: static;
+}
+.hamburger span{
+    height: 3px;
+    width: 100%;
+    background: white;
+    border-radius: 3px;
+    transition: 0.4s ease;
+}
+
+.hamburger .short-span{
+    width: 50%;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+
+.logo img{
+    width: 150px;
+}
+
+.nav-links{
+    list-style-type: none;
+}
+
+.nav-links li{
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: var(--color-white);
+    white-space: nowrap;
+    font-size: var(--font-size-12);
+    font-weight: var(--font-weight-bold);
+}
+
+.nav-links a:hover{
+    color: var(--red-color);
+    
+}
+
+.first-section{
+    margin-top: 200px;
+    text-align: center;
+    align-items: center; 
+    padding-bottom: 60px;  
+}
+
+.first-section p, h1, h4{
+    color: var(--color-white);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btn{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: var(--red-color);
+    border-radius: 20px;
+    width: auto;
+    padding: 15px 30px;
+    color: var(--color-white);
+    cursor: pointer;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-14);
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
+
+.second-section{
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;  
+    padding-top: 140px; 
+    padding-bottom: 100px; 
+}
+
+.second-section p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.media {
+    display: flex;
+    flex-wrap: wrap;                 
+    justify-content: center;     
+    align-items: stretch;               
+    gap: 100px;                          
+    padding: 60px 20px;
+}
+
+.media > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 180px;
+}
+.media img{
+    align-items: center;           
+    text-align: center;                
+    justify-content: flex-start; 
+    height: 60px;
+}
+
+.media p{
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-14);
+    text-align: center;
+}
+
+
+.third-section{
+    background: url(Assets/headphones_hero_2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 40px;
+}
+
+.third-section p{
+    padding: 100px 60px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-white);
+}
+.pentagone{
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 60px;
+}
+
+.pentagone-image{
+    position: relative;
+    margin-bottom: 20px;
+}
+.pentagone img{
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 180px;
+    height: 171px;
+    display: block;
+    
+}
+
+.pentagon-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;            
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-regular);
+    text-align: center;
+    white-space: nowrap;
+    pointer-events: none;  
+}
+
+.pentagone-image span{
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-46);
+}
+
+
+.fourth-section{
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 60px auto;
+}
+
+.contact-us h2{
+    color: var(--black-color);
+    text-align: center;
+}
+
+.contact-us {
+    width: 50vw;           
+    max-width: none;  
+    margin: 0 auto;    
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    box-sizing: border-box; 
+}
+
+.contact-us label {
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-bold);
+    color: var(--black-color);
+}
+
+.contact-us input,
+.contact-us textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+    color: var(--black-color);
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contact-us input:focus,
+.contact-us textarea:focus {
+    border-color: var(--btn-hover-color);
+    box-shadow: 0 0 5px rgba(0, 102, 255, 0.3);
+    outline: none;
+}
+
+.contact-us textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.contact-us .btn {
+    background: var(--red-color);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact-us .btn:hover {
+    opacity: 0.9;
+}
+
+.contact-us .btn:active {
+    transform: scale(0.97);
+}
+
+@media (max-width: 480px){
+    .hamburger{
+        display: flex;
+    }
+
+    .navbar{
+        display: flex;
+    }
+
+    .nav-links{
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #menu-toggle:checked + .hamburger + .logo + .nav-links {
+        display: flex;
+    }
+
+    /* HAMBURGER ANIMATION (into X) */
+    #menu-toggle:checked + .hamburger span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    #menu-toggle:checked + .hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menu-toggle:checked + .hamburger span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .logo{
+        position: absolute;
+        left: 30%;
+    }
+
+    .first-section .second-section{
+        padding: 0 20px;
+        padding-bottom: 20px;
+
+    }
+    .first-section h1, h4, p{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .second-section p{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .btn {
+        margin: 40px 0;
+        background-color: var(--red-color);
+        padding: 15px 30px;
+        border-radius: 20px;
+        color: var(--text-color-white);
+        cursor: pointer;
+    }
+
+    .btn:hover{
+        opacity: 0.9;
+    }
+
+    .pentagone {
+        justify-content: center; 
+        gap: 20px;           
+        padding: 20px;            
+    }
+
+    .pentagone-image {
+        margin: 0 auto;           
+    }
+
+    .contact-us h2{
+        font-size: var(--font-size-20);
+    }
+}
+
