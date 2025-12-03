@@ -8,43 +8,48 @@
     <link rel="stylesheet" href="1-styles.css">
 </head>
 <body class="flexbox-column">
-    
-    <header class="flex-box">
-        <nav class="navbar flex-box mobile-view">
-            <input type="checkbox" id="menu-toggle">
-            <!-- Hamburger Icon -->
-            <label for="menu-toggle" class="hamburger">
-                <span></span>
-                <span class="short-span"></span>
-                <span></span>
-            </label>
 
-            <div class="logo">
-                <img src="Assets/logo_headphones.png" alt="logo">
-            </div>
-            
-            <ul class="nav-links flex-box">
-                <li><a href="#">what we do</a></li>
-                <li><a href="#">our results</a></li>
-                <li><a href="#">contact us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-<section class="first-section flexbox-column">
-            <h1>
-                Lorem ipsum dolor sit amet consectetur adipisicing.
-            </h1>
-            <h4>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur.
-            </h4>
-            <button class="btn">CALL TO ACTION</button>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt laboriosam ratione nihil. Dolore <br>officiis, tenetur eius officia, magni ipsa excepturi quod quia dolores nostrum earum <br>recusandae ad ut magnam? Obcaecati!
-            </p>
-        </section>
+    <div class="hero-bg">
 
-        <section class="second-section">
+        <header class="flex-box">
+
+            <nav class="navbar flex-box mobile-view">
+                <input type="checkbox" id="menu-toggle">
+                <!-- Hamburger Icon -->
+                <label for="menu-toggle" class="hamburger">
+                    <span></span>
+                    <span class="short-span"></span>
+                    <span></span>
+                </label>
+
+                <div class="logo">
+                    <img src="Assets/logo_headphones.png" alt="logo">
+                </div>
+                
+                <ul class="nav-links flex-box">
+                    <li><a href="#what-we-do">what we do</a></li>
+                    <li><a href="#our-result">our results</a></li>
+                    <li><a href="#contact-us">contact us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="first-section flexbox-column" id="what-we-do">
+                <h1>
+                    Lorem ipsum dolor sit amet consectetur adipisicing.
+                </h1>
+                <h4>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur.
+                </h4>
+                <button class="btn">CALL TO ACTION</button>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt laboriosam ratione nihil. Dolore <br>officiis, tenetur eius officia, magni ipsa excepturi quod quia dolores nostrum earum <br>recusandae ad ut magnam? Obcaecati!
+                </p>
+            </section>
+        </main>
+    </div>
+
+        <section class="second-section" id="our-result">
             <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit ea earum nisi. Ab fugit dolorum. <br>
                 Nesciunt perferendis error magnam aut harum facere accusamus doloribus distinctio<br>
@@ -78,4 +83,6 @@
                 </div>
             </div>
         </section>
-    </main>
+
+</body>
+</html>

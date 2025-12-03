@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 :root {
     --color-white: rgb(255, 255, 255);
     --red-color: #FF6565;
@@ -37,12 +41,15 @@
 }
 
 body{
+    font-family: "source sans pro";
+    color: var(--text-color-white);
+}
+
+.hero-bg{
     background-image: url(Assets/headphones_hero_1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    font-family: "source sans pro";
-    color: var(--text-color-white);
 }
 
 h1{
