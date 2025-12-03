@@ -4,10 +4,13 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 :root {
     --color-white: rgb(255, 255, 255);
     --red-color: #FF6565;
-    --btn-hover-color: #FF6565;
     --border-radius: 8px;
     --font-weight-bold: bold;
     --font-weight-regular: 400;
@@ -35,14 +38,16 @@
     display: flex;
     flex-direction: column;
 }
-
 body{
+    font-family: "source sans pro";
+    color: var(--text-color-white);
+}
+
+.hero-bg{
     background-image: url(Assets/headphones_hero_1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    font-family: "source sans pro";
-    color: var(--text-color-white);
 }
 
 h1{
@@ -123,12 +128,13 @@ p{
 }
 
 .nav-links a:hover{
-    color: var(--btn-color);
+    color: var(--red-color);
     
 }
 
 .first-section{
-    margin-top: 200px;
+    padding-top: 200px;
+    padding-bottom: 100px;
     text-align: center;
     align-items: center;   
 }
